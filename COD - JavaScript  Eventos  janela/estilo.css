@@ -1,0 +1,150 @@
+/* LAYOUT INICIO */
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  min-width: 600px;
+  max-width: 1000px;
+}
+
+#marca {
+  width: 100%;
+  background: #9e9e9e;
+  text-align: center;
+  line-height: 100px;
+}
+
+#conteudo {
+  width: 77%;
+  float: right;
+}
+
+#navegaçaoV {
+  width: 20%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #d1d1d1;
+  max-width: 20%;
+  min-width: 50px;
+}
+
+#rodape {
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}
+
+/* LAYOUT FIM */
+/* 
+
+
+*/
+/* MENU LATERAL - INICIO*/
+
+#navegaçaoV ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navegaçaoV li a {
+  width: auto;
+  height: 40px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  line-height: 40px;
+  background: #f7b600 no-repeat left bottom;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+#navegaçaoV a:hover,
+.selecionado a {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: white;
+}
+
+#home #navegaçaoVertical .home a,
+#sobre #navegaçaoVertical .sobre a,
+#serviço #navegaçaoVertical .serviço a,
+#noticias #navegaçaoVertical .noticias a,
+#contato #navegaçaoVertical .contato a {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: #fff;
+}
+
+#tituloMenu {
+  font-size: 40px;
+  color: #f99200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #f99200;
+  -webkit-text-stroke: 0.5px #000;
+  text-align: center;
+  margin: 17px;
+}
+
+div#centralizadoV {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+}
+
+/* MENU LATERAL - FIM*/
+/* 
+
+
+*/
+/* CONTEUDO - INICIO*/
+
+#conteudoPrincipal {
+  width: 63%;
+  float: left;
+  text-align: justify;
+  background: #c4c4c4;
+}
+
+#conteudoPrincipal p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#conteudoSecundario {
+  border: 1px solid #f99200;
+  width: 35%;
+  float: right;
+  background: #d1d1d1;
+  text-align: left;
+}
+
+#conteudoSecundario p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#conteudo h2 {
+  text-align: center;
+  color: #f99200;
+}
+
+/* CONTEUDO - FIM*/
+/* 
+
+
+*/

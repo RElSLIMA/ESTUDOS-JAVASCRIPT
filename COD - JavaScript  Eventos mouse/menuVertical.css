@@ -1,0 +1,56 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  width: 200px;
+  height: 40px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  text-indent: 40px;
+  line-height: 40px;
+  background: #f7b600 url(imagens/menu.png) no-repeat left bottom;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+a:hover,
+.selecionado a {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: white;
+}
+
+#home #navegaçaoVertical .home a,
+#sobre #navegaçaoVertical .sobre a,
+#serviço #navegaçaoVertical .serviço a,
+#noticias #navegaçaoVertical .noticias a,
+#contato #navegaçaoVertical .contato a {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: #fff;
+}
+
+#tituloMenu {
+  font-size: 40px;
+  color: #f99200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #f99200;
+  -webkit-text-stroke: 0.5px #000;
+  text-align: center;
+  margin: 17px;
+}
+
+div#centralizadoV {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+}

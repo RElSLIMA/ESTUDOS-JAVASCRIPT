@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>EVENTOS TECLADOS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Estilizando Formularios</h2>
+    <form>
+      <fieldset>
+        <legend>Detalhes de Contato</legend>
+
+        <div>
+          <label for="nome">Nome:</label
+          ><input onkeydown="acao()" type="text" name="nome" id="nome" />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input onkeyup="acao2()" type="text" name="email" id="email" />
+        </div>
+        <div>
+          <label>URL:</label>
+          <input onkeypress="acao3()" type="text" name="url" id="url" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Comentários</legend>
+        <div>
+          <label for="memsagem">Mensagem:</label>
+          <textarea mome="mensagem" id="mensagem"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Lembrar de mim</legend>
+        <div>
+          <label>
+            <input class="radio" type="radio" name="lembrar" id="sim" />Sim
+          </label>
+        </div>
+        <div>
+          <label>
+            <input class="radio" type="radio" name="lembrar" id="nao" />Não
+          </label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

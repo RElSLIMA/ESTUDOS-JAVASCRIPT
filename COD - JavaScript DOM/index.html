@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>DOM</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+  </head>
+  <body>
+    <h2>Estilizando Formularios</h2>
+    <form>
+      <fieldset>
+        <legend>teste</legend>
+
+        <div>
+          <label for="nome">info:</label
+          ><input onkeyup="caracter()" type="text" name="texto" id="texto" />
+        </div>
+        <div>
+          <label>nome:</label>
+          <input type="text" name="nome" id="nome" disabled="disabled" />
+        </div>
+        <div>
+          <label>idade:</label>
+          <input type="text" name="idade" id="idade" disabled="disabled" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Comentários</legend>
+        <div>
+          <label for="memsagem">Mensagem:</label>
+          <textarea
+            onfocus="acionaCampo()"
+            onblur="validaCampo()"
+            mome="mensagem"
+            id="mensagem"
+          ></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>RGB</legend>
+        <div id="fundo" class="estilo">
+          <div>
+            <label>
+              <input
+                onclick="mudaCor('#00ff00'), mudarEstilo()"
+                class="radio"
+                type="radio"
+                name="lembrar"
+                id="verde"
+              />verde
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                onclick="mudaCor('#0000ff'), mudarEstilo()"
+                class="radio"
+                type="radio"
+                name="lembrar"
+                id="azul"
+              />azul
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                onclick="mudaCor('#ff0000'), mudarEstilo()"
+                class="radio"
+                type="radio"
+                name="lembrar"
+                id="vermelho"
+              />vermelho
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                onclick="mudaCor('#ffffff'),limparEstilo()"
+                class="radio"
+                type="radio"
+                name="lembrar"
+                id="limpar"
+              />limpar
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <select>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <script src="script.js"></script>
+  </body>
+</html>
