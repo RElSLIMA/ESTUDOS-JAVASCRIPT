@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora de idade</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="estilo.css" />
+  <script src="script.js"></script>
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <br><br>
+
+    <div class="row">
+
+      <div class="input-group mb-3">
+
+        <span class="input-group-text">Dia:</span>
+        <input onkeyup="dia()" id="dia" type="text" class="form-control" aria-label="Username">
+        <span class="input-group-text">Mês:</span>
+        <input id="mes" type="text" class="form-control" aria-label="Server">
+        <span class="input-group-text">Ano:</span>
+        <input id="ano" type="text" class="form-control" aria-label="Server">
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <input type="text" class="form-control resposta" disabled="disabled" aria-label="Server">
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
